@@ -1,0 +1,123 @@
+.mySwiper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.mySwiperSlide {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 3rem !important;
+    gap: 3rem;
+    padding-top: 5rem;
+}
+
+.mySwiperSlide>h1 {
+    width: 60%;
+    font-size: 55px;
+    text-align: center;
+    font-weight: 900;
+    line-height: 4rem;
+    color: var(--light);
+}
+
+.mySwiperSlide>p {
+    width: 60%;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1.4rem;
+    color: var(--gray);
+}
+
+.mySwiperSlide1 {
+    background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)), url(../../assets/carousel-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mySwiperSlide2 {
+    background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)), url(../../assets/carousel-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.btn-swiper {
+    position: absolute;
+    z-index: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-swiper>svg {
+    fill: #fff0e66e;
+    font-size: 3rem;
+}
+
+.btn-swiper-left {
+    top: 50%;
+    left: 5rem;
+
+}
+
+.btn-swiper-right {
+    top: 50%;
+    right: 5rem;
+}
+
+@media (min-width: 1800px) {
+    .hero-section {
+        max-width: 1800px;
+        margin: auto;
+
+    }
+}
+
+@media (max-width: 990px) {
+    .mySwiperSlide>h1 {
+        font-size: 45px;
+        width: 80%;
+    }
+
+    .mySwiperSlide>p {
+        font-size: .9rem;
+        width: 80%;
+    }
+
+    .btn-swiper-left {
+        left: 2rem;
+    }
+
+    .btn-swiper-right {
+        right: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .mySwiperSlide>h1 {
+        font-size: 28px;
+        width: 90%;
+    }
+
+    .mySwiperSlide>p {
+        font-size: .7rem;
+        width: 90%;
+    }
+
+    .btn-swiper-left {
+        left: .7rem;
+    }
+
+    .btn-swiper-right {
+        right: .7rem;
+    }
+}

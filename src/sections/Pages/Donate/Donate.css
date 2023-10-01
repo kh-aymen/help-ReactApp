@@ -1,0 +1,47 @@
+.donate-section>div {
+    flex: 1;
+}
+
+.donate-section-left>.p {
+    line-height: 20px;
+    margin-top: 3rem;
+    font-size: 1rem;
+    width: 90%;
+}
+
+.donate-section-right {
+    background-color: #FFF0E6;
+    width: 100%;
+    padding: 2.2rem;
+}
+
+.donate-section-right>form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.6rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.donate-section-right>form>:nth-child(1),
+.donate-section-right>form>:nth-child(2),.donate-section-right>form>:nth-child(3)  {
+    width: 100%;
+    background-color: white;
+}
+
+.donate-section-right>form>:nth-child(1) input,
+.donate-section-right>form>:nth-child(2) input {
+    border: none !important;
+    outline: none !important;
+    color: var(--dark);
+}
+
+
+
+@media (max-width:600px) {
+    .donate-section{
+        flex-direction: column;
+    }
+}

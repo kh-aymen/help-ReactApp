@@ -1,0 +1,47 @@
+.errorpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: auto;
+}
+
+.errorpage>svg {
+    font-size: 5.4rem;
+    fill: var(--primary);
+}
+
+.errorpage>h1 {
+    color: var(--dark);
+    font-size: 3rem;
+}
+
+.errorpage>p {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .errorpage>h1 {
+        font-size: 2rem;
+    }
+    .errorpage>p {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+.errorpage>.button-white>a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .4rem;
+}

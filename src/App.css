@@ -1,0 +1,104 @@
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all ease-in 100ms;
+}
+
+li>a:hover {
+    color: var(--primary);
+}
+
+.section {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+
+.flexCenter {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexColCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.p {
+    color: #001d23bd;
+    line-height: 1.4rem;
+    font-size: 15px;
+    font-family: var(--secondary-text);
+}
+
+.button-orange,
+.button-white {
+    padding: 8px 7px !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 7px !important;
+    align-items: center !important;
+    font-weight: 500 !important;
+    font-size: .9rem !important;
+    outline: none !important;
+    border-radius: 4px !important;
+    transition: all 200ms ease-in !important;
+    font-weight: 500 !important;
+}
+
+.button-orange {
+    color: var(--light) !important;
+    background: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
+}
+
+.button-orange:hover {
+    color: var(--primary) !important;
+    background: transparent !important;
+}
+
+.button-white {
+    color: var(--primary) !important;
+    background: transparent !important;
+    border: 1px solid var(--primary) !important;
+}
+
+.button-white:hover {
+    color: var(--light) !important;
+    background: var(--primary) !important;
+}
+
+
+/* media queries */
+@media (min-width: 1800px) {
+    .section {
+        max-width: 1800px;
+        margin: auto;
+    }
+
+    a {
+      font-size: 1.4rem;
+    }
+    
+}
+
+@media (min-width: 640px) {
+    .section {
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .primaryText {
+        font-size: 1.5rem;
+    }
+
+    .orangeText {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,131 @@
+.causes-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.causes-section>div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.causes-section>div:first-child>p {
+    width: 60%;
+    text-align: center;
+}
+
+.causes-section-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.causes-section-container-item {
+    max-width: 360px
+}
+
+.causes-section-container-item-text {
+    text-align: center;
+    background-color: var(--light);
+    width: 100%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 1.3rem 1rem;
+    border-top: solid var(--primary) 4px;
+    border-radius: 6px 6px 0 0;
+}
+
+
+.causes-section-container-item-text>span {
+    background-color: var(--primary);
+    width: max-content;
+    margin: 0 auto 0;
+    padding: 7px 8px;
+    border-radius: 0 0 6px 6px;
+    color: var(--light);
+    font-size: 17px;
+}
+
+.causes-section-container-item-text>h2 {
+    color: var(--dark);
+    font-size: 20px;
+}
+
+.causes-section-container-item-text>p {
+    font-size: 16px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    padding: 5px 16px;
+}
+
+.slider>div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider>div:first-child>span {
+    color: #0000006e;
+}
+
+.slider>div:first-child>span>span {
+    color: var(--dark);
+}
+
+.causes-section-container-item-image {
+    position: relative;
+    cursor: pointer;
+    transition: all ease-in 250ms;
+}
+
+.causes-section-container-item-image>img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.causes-section-container-item-image>div {
+    position: absolute;
+    top: -48.8%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    width: 100%;
+    height: 262px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #001d2394;
+    transition: all ease-in 250ms;
+}
+
+.causes-section-container-item:hover .causes-section-container-item-image>div {
+    display: flex;
+    animation: opacity 300ms ease-in both;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

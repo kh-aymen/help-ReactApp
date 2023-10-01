@@ -1,0 +1,101 @@
+.testimonail-section-container>.mySwiper {
+    margin-top: 2rem;
+    width: 90%;
+    height: max-content;
+}
+
+.testimonail-section-container>.mySwiper>div {
+    width: 50%;
+    position: relative;
+    transition: all 250ms ease-in;
+}
+
+.swiper-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 2rem;
+}
+
+.swiper-content>.swiper-image>img {
+    border-radius: 50%;
+    border: 8px solid var(--primary);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-body {
+    width: 100%;
+    background-color: var(--primary);
+    padding: 1rem;
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.swiper-body>p {
+    color: var(--light);
+    font-size: 16px;
+}
+
+.testimonail-section-container>.mySwiper>div .btn {
+    color: var(--primary);
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 900;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    opacity: 1;
+    transition: all 250ms ease-in;
+}
+
+.testimonail-section-container>.mySwiper>div .btn-left {
+    top: 13%;
+    left: 20%;
+}
+
+.testimonail-section-container>.mySwiper>div .btn-right {
+    top: 13%;
+    right: 20%;
+}
+
+
+
+@media (max-width:913px) {
+    .testimonail-section-container>.mySwiper {
+        width: 90%;
+    }
+
+    .testimonail-section-container>.mySwiper>div {
+        width: 80%;
+    }
+}
+
+@media (max-width:600px) {
+    .testimonail-section-container>.mySwiper {
+        width: 100%;
+    }
+
+    .testimonail-section-container>.mySwiper>div {
+        width: 85%;
+    }
+
+    .testimonail-section-container>.mySwiper>div .btn-left {
+        left: 10%;
+    }
+
+    .testimonail-section-container>.mySwiper>div .btn-right {
+
+        right: 10%;
+    }
+}

@@ -1,0 +1,243 @@
+/* about-section */
+.about-section>div {
+    flex: 1;
+    width: 100%;
+    padding: .1rem 1rem;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container>img {
+    width: 30rem;
+}
+
+.about-section-right {
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.about-section-right-founder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .8rem;
+}
+
+.about-section-right-founder>div {
+    background-color: var(--light);
+    padding: 1rem;
+    border-bottom: 5px var(--primary) solid;
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.about-section-right-founder>div>span {
+    color: var(--primary);
+}
+
+.about-section-right-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+
+@media (min-width: 1800px) {
+    .img-container>img {
+        width: 45rem;
+    }
+}
+
+@media (max-width: 1120px) {
+    .about-section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .img-container>img {
+        width: 20rem;
+    }
+
+    .about-section-right {
+        padding: 6rem;
+    }
+
+    .about-section-right-buttons>Button {
+        font-size: .7rem !important;
+    }
+}
+
+/* WhatWeDo */
+
+.whatwedosection {
+    gap: 3rem;
+}
+
+.whatwedosessction-header>div {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+}
+
+.whatwedosessction-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.whatwedosessction-card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    box-shadow: 0px 10px 19px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    max-width: 290px;
+}
+
+.whatwedosessction-card-item>svg {
+    fill: var(--primary);
+    font-size: 4rem;
+}
+
+.whatwedosessction-card-item>h1 {
+    color: var(--dark);
+}
+
+
+@media (min-width: 1800px) {
+    .whatwedosessction-card-item {
+        max-width: 350px;
+    }
+
+    .whatwedosessction-card-item>svg {
+        fill: var(--primary);
+        font-size: 5rem;
+    }
+
+    .whatwedosessction-card-item>h1 {
+        font-size: 1.7rem;
+
+    }
+
+    .whatwedosessction-card-item>p {
+        font-size: 1.1rem;
+
+    }
+}
+
+@media (max-width: 1120px) {
+    .whatwedosessction-card {
+        width: 100%;
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+
+    .whatwedosessction-card-item {
+        max-width: 100%;
+    }
+
+    .whatwedosessction-header>div {
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        width: 80%;
+        margin-left: 0;
+        padding: 16px 1.6px;
+    }
+}
+
+/* teammembers section */
+
+
+.teammembers-section-card {
+    margin-top: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+
+.teammembers-section-card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: var(--light);
+}
+
+.teammembers-section-card-item>img {
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.teammembers-section-card-item>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    background-color: var(--light);
+    width: 100%;
+    height: 100%;
+    padding-bottom: .5rem;
+}
+
+.teammembers-section-card-item>div>h2 {
+    color: var(--dark);
+}
+
+.teammembers-section-card-item>div>span {
+    color: var(--primary);
+}
+
+.teammembers-section-card-item>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+
+}
+
+.contact-icons a {
+    color: var(--primary);
+}
+
+.contact-icons a svg {
+    font-size: 1.7rem;
+}
+
+.contact-icons a:hover {
+    color: var(--dark);
+}
+
+@media (max-width: 579px) {
+    .teammembers-section-card-item {
+        width: 70%;
+    }
+
+    .teammembers-section-card-item>img {
+        max-width: 100%;
+    }
+
+}
